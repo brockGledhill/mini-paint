@@ -1,32 +1,52 @@
-body {
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
   font-family: 'Press Start 2P', cursive;
+  background: black;
 }
 
-a {
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 235px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+#color-buttons {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#color-buttons a {
+  padding: 10px;
+  font-size: 16px;
   text-decoration: none;
-  color: black;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
 }
 
-hr {
-  color: #fff;
-  border: none;
+.reset {
+  color: white;
 }
 
-div {
-    width: 100%;
-    height: 600px;
-}
-
-div div {
-    width: 1%;
-    height: 2%;
-    outline: 1px solid #fff;
-    float: left;
-    background: black;
-}
-
-.white {
-  background: #fff;
+.orange {
+  background: orange;
 }
 
 .red {
@@ -45,46 +65,15 @@ div div {
   background: yellow;
 }
 
-.pallette-white {
-  background: white;
-  height: 2%;
-  width: 1%;
-  padding: 10px;
-  border: 1px solid black;
+.grid {
+    width: 100%;
+    height: 600px;
 }
 
-.pallette-black {
-  background: black;
-  color: white;
-  height: 2%;
-  width: 1%;
-  padding: 10px;
-}
-
-.pallette-red {
-  background: red;
-  height: 2%;
-  width: 1%;
-  padding: 10px
-}
-
-.pallette-green {
-  background: green;
-  height: 2%;
-  width: 1%;
-  padding: 10px;
-}
-
-.pallette-yellow {
-  background: yellow;
-  height: 2%;
-  width: 1%;
-  padding: 10px;
-}
-
-.pallette-blue {
-  background: blue;
-  height: 2%;
-  width: 1%;
-  padding: 10px;
+.box {
+    width: 1%;
+    height: 2%;
+    outline: 1px solid #f1f1f1;
+    float: left;
+    background: white;
 }
